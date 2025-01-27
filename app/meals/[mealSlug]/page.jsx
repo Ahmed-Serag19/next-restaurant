@@ -1,11 +1,17 @@
 import React from "react";
+import classes from "./page.module.css";
 
-const MealsPage = ({ params }) => {
+const MealDetailPage = ({ params }) => {
   return (
     <>
-      <header></header>
+      <header className={classes.header}>
+        <div className={classes.image}>
+          <Image />
+        </div>
+      </header>
+      <main></main>
     </>
   );
 };
 
-export default MealsPage;
+export default MealDetailPage;
