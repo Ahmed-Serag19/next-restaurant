@@ -1,8 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import classes from "./page.module.css";
+import { getMeals } from "@/lib/meals";
+import MealsGrid from "@/components/meals/meals-grid";
 
-const MealsPage = () => {
+const MealsPage = async () => {
+  const meals = await getMeals();
   return (
     <>
       <header className={classes.header}>
@@ -15,8 +18,8 @@ const MealsPage = () => {
           <Link href="/meals/share">Share Your Favorite Recipe</Link>
         </p>
       </header>
-      <main>
-        <h1 className="text-white">Meals</h1>
+      <main className={classes.main}>
+        <MealsGrid meals={meals} />
       </main>
     </>
   );
