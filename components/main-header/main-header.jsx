@@ -17,10 +17,10 @@ const MainHeader = () => {
         <nav className={classes.nav}>
           <ul>
             <li>
-              <NavLink href="/meals" children="Browse Meals" />
+              <NavLink href="/meals">Browse Meals</NavLink>
             </li>
             <li>
-              <NavLink href="/community" children="Foodies Community" />
+              <NavLink href="/community">Foodies Community</NavLink>
             </li>
           </ul>
         </nav>

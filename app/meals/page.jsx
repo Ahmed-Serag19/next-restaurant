@@ -1,5 +1,4 @@
 import Link from "next/link";
-import React from "react";
 import classes from "./page.module.css";
 import { getMeals } from "@/lib/meals";
 import MealsGrid from "@/components/meals/meals-grid";
