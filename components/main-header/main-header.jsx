@@ -12,7 +12,7 @@ const MainHeader = () => {
       <header className={classes.header}>
         <Link href="/" className={classes.logo}>
           <Image priority src={logoImg} alt="A plate with food on it" />
-          NextLevel Food
+          Foodies
         </Link>
         <nav className={classes.nav}>
           <ul>
